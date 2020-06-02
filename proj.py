@@ -3,12 +3,25 @@ from pprint import pprint
 import pyscreenshot as ImageGrab
 import time
 import urllib.request
-from firebase import firebase
 import datetime
+import os
+import sys
+import firebase_admin
+from datetime import datetime
+from firebase_admin import credentials
+from database.firebase_interface import FirebaseInterface
+
+cred = credentials.Certificate('database/credentials.json')
+firebase_admin.initialize_app(cred)
+interface = FirebaseInterface()
 
 
-firebase = firebase.FirebaseApplication(
-    "https://venturus-b5e60.firebaseio.com/", None)
+def sendDataToFirebase(num_people):
+    docTitle = datetime.today().strftime('%Y-%m-%d')
+    currentHour = datetime.today().strftime('%H:%M:%S')
+    docData = {currentHour: {"num_people": num_people}}
+    interface.addOrUpdateData("kitchen_data", docTitle, docData)
+
 
 client = boto3.client('rekognition')
 
@@ -41,13 +54,7 @@ while True:
         people = str(people).count("BoundingBox")
         print(people)
 
-    data = {
-        'People': people,
-        'Time': datetime.datetime.now()
-    }
-
-    result = firebase.post('/venturus-b5e60/Info', data)
-    print(result)
+    sendDataToFirebase(people)
 
     count += 1
     time.sleep(4)
