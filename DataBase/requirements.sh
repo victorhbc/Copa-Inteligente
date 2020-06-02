@@ -1,1 +1,0 @@
-pip3 install firebase_admin==3.1.0

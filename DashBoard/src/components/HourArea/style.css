@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "aktiv_grotesk_w01regular";
+  src: url("aktiv-grotesk-w01-webfont.woff2") format("woff2"),
+    url("aktiv-grotesk-w01-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap
+}
+
+.TextArea {
+  width: fit-content;
+}
+
+.header,
+.info_hour {
+  text-align: left;
+  font-family: aktiv_grotesk_w01regular;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.info_hour {
+  display: flex;
+  justify-content: center;
+}
+
+.num_people {
+  font-weight: bold;
+  font-size: 6em;
+  margin-right: 0.1em;
+}
+
+.hour {
+  font-weight: bold;
+  font-size: 5em;
+  margin-right: 0.1em;
+}
+
+.text_info_hour {
+  font-size: 2em;
+  height: 100%;
+  vertical-align: middle;
+  margin-top: 5px;
+}
