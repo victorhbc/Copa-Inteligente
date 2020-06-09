@@ -18,7 +18,7 @@ interface = FirebaseInterface()
 
 def sendDataToFirebase(num_people):
     docTitle = datetime.today().strftime('%Y-%m-%d')
-    currentHour = datetime.today().strftime('%H:%M:%S')
+    currentHour = datetime.today().strftime('%H:%M')
     docData = {currentHour: {"num_people": num_people}}
     interface.addOrUpdateData("kitchen_data", docTitle, docData)
 
