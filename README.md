@@ -23,7 +23,7 @@ No arquivo database/credentials.json adicione suas informações de credenciais
 No aplicativo **IP Webcam**:
 1. Clique em *Start server*
 
-![](https://lh3.googleusercontent.com/pw/ACtC-3dmOvtzyDlZJPY-5PkV_lIAb4ues2--CWess1rNA4wEb9rMtrWPbDgwkp33TrXC3AFkRy5vPVah1Jiocs26vh6HrOU_a7nUdKn5mK14bWMua-YXb2fTHQxG70Mg2Iq9QNUBWc1fUOLgKJ7idOdV72XImQ=w627-h937-no?authuser=0 =250x)
+![](https://lh3.googleusercontent.com/pw/ACtC-3dmOvtzyDlZJPY-5PkV_lIAb4ues2--CWess1rNA4wEb9rMtrWPbDgwkp33TrXC3AFkRy5vPVah1Jiocs26vh6HrOU_a7nUdKn5mK14bWMua-YXb2fTHQxG70Mg2Iq9QNUBWc1fUOLgKJ7idOdV72XImQ=w627-h937-no?authuser=0)
 	
 2. Copie o endereço de IPv4
 
