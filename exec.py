@@ -25,7 +25,7 @@ def sendDataToFirebase(num_people):
 
 client = boto3.client('rekognition')
 
-url = 'http://192.168.15.38:8080/shot.jpg'
+url = '[URL]/shot.jpg'
 
 count = 0
 
