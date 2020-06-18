@@ -18,7 +18,7 @@ Crie um perfil de IAM no AWS com acesso ao rekognition ou administrador coloque 
     Default region name: [region]
     Default output format: json
     
-No arquivo database/credentials.json adicione suas informações de credenciais
+Crie o arquivo database/credentials.json e adicione suas informações de credenciais do firebase
 
 No aplicativo **IP Webcam**:
 1. Clique em *Start server*
