@@ -25,7 +25,7 @@ No aplicativo **IP Webcam**:
 
 ![](https://lh3.googleusercontent.com/pw/ACtC-3dmOvtzyDlZJPY-5PkV_lIAb4ues2--CWess1rNA4wEb9rMtrWPbDgwkp33TrXC3AFkRy5vPVah1Jiocs26vh6HrOU_a7nUdKn5mK14bWMua-YXb2fTHQxG70Mg2Iq9QNUBWc1fUOLgKJ7idOdV72XImQ=w627-h937-no?authuser=0)
 
-2.Copie o endereço de IPv4 na [URL] linha 28 exec.py
+2.Copie o endereço de IPv4 na [URL] linha 17 exec.py
 
     url = '[URL]/shot.jpg'
 
@@ -34,3 +34,7 @@ Execute o comando
     py exec.py
 
 siga para a branch dashboard
+
+Para definir um tempo customizável excecute a flag:
+    
+    --time [tempo]
