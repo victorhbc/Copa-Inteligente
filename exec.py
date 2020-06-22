@@ -14,7 +14,7 @@ from database.firebase_interface import FirebaseInterface
 import threading
 import argparse
 
-url = ['URL']
+url = '[URL]/shot.jpg'
 client = boto3.client('rekognition')
 cred = credentials.Certificate('database/credentials.json')
 firebase_admin.initialize_app(cred)
